@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.AlunoPage"
+             Title="AlunoPage">
+    <VerticalStackLayout BackgroundColor="AliceBlue">
+
+        <Label Text="1° Trimestre" x:Name="t1" TextColor="Black"/>
+
+        <ScrollView Orientation="Horizontal">
+            <Grid BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"  />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <!--boxviews-->
+                <BoxView Grid.Column="0" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="1" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="2" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="3" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="4" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="5" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="6" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="7" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="8" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="9" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="10" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="11" BackgroundColor="Gray" WidthRequest="1" />
+                <BoxView Grid.Column="12" BackgroundColor="Gray" WidthRequest="1" />
+
+
+                <!-- Primeira linha: Nomes das disciplinas -->
+
+                <Label Grid.Column="1" Grid.Row="0" x:Name="Disciplina1" TextColor="Black"/>
+
+
+                <Label Grid.Column="2" Grid.Row="0" x:Name="Disciplina2"     TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="0" x:Name="Disciplina3"   TextColor="Black"/>
+                <Label Grid.Column="4" Grid.Row="0" x:Name="Disciplina4"   TextColor="Black"/>
+                <Label Grid.Column="5" Grid.Row="0" x:Name="Disciplina5"   Text="-" TextColor="Black"/>
+                <Label Grid.Column="6" Grid.Row="0" x:Name="Disciplina6"   Text="" TextColor="Black"/>
+                <Label Grid.Column="7" Grid.Row="0" x:Name="Disciplina7"   Text="-" TextColor="Black"/>
+                <Label Grid.Column="8" Grid.Row="0" x:Name="Disciplina8"   Text="-" TextColor="Black"/>
+                <Label Grid.Column="9" Grid.Row="0" x:Name="Disciplina9" Text="-" TextColor="Black"/>
+                <Label Grid.Column="10" Grid.Row="0" x:Name="Disciplina10" Text="-" TextColor="Black"/>
+                <Label Grid.Column="11" Grid.Row="0" x:Name="Disciplina11"  Text="-" TextColor="Black"/>
+                <Label Grid.Column="12" Grid.Row="0" x:Name="Disciplina12" Text="-" TextColor="Black"/>
+
+                <!-- Segunda linha: Notas da P1 -->
+                <Label Grid.Column="0" Grid.Row="1"  Text="P1" TextColor="Black" />
+                <Label Grid.Column="1" Grid.Row="1" x:Name="NotaP1Disciplina1"   TextColor="Black" />
+                <Label Grid.Column="2" Grid.Row="1" x:Name="NotaP1Disciplina2"   TextColor="Black"/>
+                <Label Grid.Column="3" Grid.Row="1" x:Name="NotaP1Disciplina3"  TextColor="Black"/>
+                <Label Grid.Column="4" Grid.Row="1" x:Name="NotaP1Disciplina4" TextColor="Black" />
+                <Label Grid.Column="5" Grid.Row="1" x:Name="NotaP1Disciplina5"  TextColor="Black"/>
+                <Label Grid.Column="6" Grid.Row="1" x:Name="NotaP1Disciplina6"   TextColor="Black" />
+                <Label Grid.Column="7" Grid.Row="1" x:Name="NotaP1Disciplina7"  TextColor="Black" />
+                <Label Grid.Column="8" Grid.Row="1" x:Name="NotaP1Disciplina8"  TextColor="Black"/>
+                <Label Grid.Column="9" Grid.Row="1" x:Name="NotaP1Disciplina9" TextColor="Black" />
+                <Label Grid.Column="10" Grid.Row="1" x:Name="NotaP1Disciplina10"  TextColor="Black"/>
+                <Label Grid.Column="11" Grid.Row="1" x:Name="NotaP1Disciplina11"  TextColor="Black"/>
+                <Label Grid.Column="12" Grid.Row="1" x:Name="NotaP1Disciplina12"  TextColor="Black"/>
+
+                <!-- Terceira linha: Notas da P2 -->
+                <Label Grid.Column="0" Grid.Row="2" Text="P2"  TextColor="Black" />
+                <Label Grid.Column="1" Grid.Row="2" x:Name="NotaP2Disciplina1"  TextColor="Black"  />
+                <Label Grid.Column="2" Grid.Row="2" x:Name="NotaP2Disciplina2"  TextColor="Black"  />
+                <Label Grid.Column="3" Grid.Row="2" x:Name="NotaP2Disciplina3"  TextColor="Black"  />
+                <Label Grid.Column="4" Grid.Row="2" x:Name="NotaP2Disciplina4"   TextColor="Black" />
+                <Label Grid.Column="5" Grid.Row="2" x:Name="NotaP2Disciplina5"   TextColor="Black" />
+                <Label Grid.Column="6" Grid.Row="2" x:Name="NotaP2Disciplina6"  TextColor="Black"  />
+                <Label Grid.Column="7" Grid.Row="2" x:Name="NotaP2Disciplina7"   TextColor="Black"  />
+                <Label Grid.Column="8" Grid.Row="2" x:Name="NotaP2Disciplina8"  TextColor="Black" />
+                <Label Grid.Column="9" Grid.Row="2" x:Name="NotaP2Disciplina9"  TextColor="Black" />
+                <Label Grid.Column="10" Grid.Row="2" x:Name="NotaP2Disciplina10"  TextColor="Black"/>
+                <Label Grid.Column="11" Grid.Row="2" x:Name="NotaP2Disciplina11"  TextColor="Black" />
+                <Label Grid.Column="12" Grid.Row="2" x:Name="NotaP2Disciplina12"  TextColor="Black" />
+
+                <!-- Quarta linha: Notas da prova trimestral -->
+                <Label Grid.Column="0" Grid.Row="3" Text="PT"   TextColor="Black"  />
+                <Label Grid.Column="1" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina1"  TextColor="Black"  />
+                <Label Grid.Column="2" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina2"  TextColor="Black"  />
+                <Label Grid.Column="3" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina3"  TextColor="Black"  />
+                <Label Grid.Column="4" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina4"  TextColor="Black"  />
+                <Label Grid.Column="5" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina5"  TextColor="Black" />
+                <Label Grid.Column="6" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina6"   TextColor="Black" />
+                <Label Grid.Column="7" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina7"   TextColor="Black" />
+                <Label Grid.Column="8" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina8"  TextColor="Black"  />
+                <Label Grid.Column="9" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina9"   TextColor="Black"  />
+                <Label Grid.Column="10" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina10"  TextColor="Black"  />
+                <Label Grid.Column="11" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina11"  TextColor="Black"/>
+                <Label Grid.Column="12" Grid.Row="3" x:Name="NotaProvaTrimestralDisciplina12"  TextColor="Black" />
+
+                <!-- Quinta linha: Médias -->
+                <Label Grid.Column="0" Grid.Row="4" Text="Média" TextColor="Black" />
+                <Label Grid.Column="1" Grid.Row="4" x:Name="MediaDisciplina1"   TextColor="Black" />
+                <Label Grid.Column="2" Grid.Row="4" x:Name="MediaDisciplina2"    TextColor="Black" />
+                <Label Grid.Column="3" Grid.Row="4" x:Name="MediaDisciplina3" TextColor="Black" />
+                <Label Grid.Column="4" Grid.Row="4" x:Name="MediaDisciplina4"   TextColor="Black" />
+                <Label Grid.Column="5" Grid.Row="4" x:Name="MediaDisciplina5"  TextColor="Black" />
+                <Label Grid.Column="6" Grid.Row="4" x:Name="MediaDisciplina6"  TextColor="Black" />
+                <Label Grid.Column="7" Grid.Row="4" x:Name="MediaDisciplina7"  TextColor="Black"  />
+                <Label Grid.Column="8" Grid.Row="4" x:Name="MediaDisciplina8"  TextColor="Black"  />
+                <Label Grid.Column="9" Grid.Row="4" x:Name="MediaDisciplina9"  TextColor="Black" />
+                <Label Grid.Column="10" Grid.Row="4" x:Name="MediaDisciplina10"  TextColor="Black" />
+                <Label Grid.Column="11" Grid.Row="4" x:Name="MediaDisciplina11"  TextColor="Black" />
+                <Label Grid.Column="12" Grid.Row="4" x:Name="MediaDisciplina12"  TextColor="Black"/>
+            </Grid>
+        </ScrollView>
+
+    </VerticalStackLayout>
+</ContentPage>
